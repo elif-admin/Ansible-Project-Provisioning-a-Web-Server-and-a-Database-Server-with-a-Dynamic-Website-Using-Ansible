@@ -1,0 +1,5 @@
+- hosts: db_server
+  tasks:
+    - debug: var=hostvars
+    - debug: var=hostvars['web_server'].ansible_host
+    
